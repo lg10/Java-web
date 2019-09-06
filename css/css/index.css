@@ -1,0 +1,6 @@
+@charset "utf-8";/*设置同义字符编码格式*/
+div{
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+	}

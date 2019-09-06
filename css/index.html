@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>样式表的使用</title>
+		<style>
+			body{/*标签选择器*/
+				font-size: 30px;/*字体大小*/
+				color:red ;/*字体颜色*/
+				font-family: '楷体';/*字体类型*/
+				}
+			img{
+				width: 600px;/*宽度,单位不能省略*/
+				border-radius: 20%;/*圆角属性,值为被分数或者具体像素值*/
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				color: white;
+				}
+				.fc{
+					/* rotate:引用动画规则名称 2s:为一个周期的时间  linear:匀速执行 infinite:无穷次*/
+					animation:rotate  2s linear infinite;
+				}
+				/* @-ms-keyframes name{
+					from{}
+					to{}
+				}
+				@-webkit-keyframes name{
+					from{}
+					to{}
+				}
+				@-moz-keyframes name{
+					from{}
+					to{}
+				} */
+				@keyframes rotate{/*定义动画规则,名称为rotate*/
+					from{transform:rotate(0deg) ;}/*开始为0度*/
+					to{transform:rotate(360deg) ;}/*动画结束为360度*/
+				}
+		</style>
+		<!-- 引入外部样式表 -->
+		<link href="css/index.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body style="background-color:lightblue;">
+		CSS:级联样式表,引入方式<br/>
+		方式一:行内样式,很少
+		方式二:内部样式表,较多,在head元素内部使用style标签<br/>
+		<img src="img/325453.jpg" />
+		方式三:外部样式表,最普遍<br />
+		<div style="background-color:green;">第1个div</div>
+		<hr color="#FF0000" />
+		<div>第2个div</div>
+		<div>第3个div</div>
+		<div>第4个div</div>
+		<h3>优先级:就近原则.行内样式>内部样式>外部样式</h3>
+		<img src="img/fengche.png" class="fc"/>
+	</body>
+</html>
