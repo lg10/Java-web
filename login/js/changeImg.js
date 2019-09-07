@@ -18,6 +18,10 @@ function changeImg() {
      document.body.style.backgroundImage = "url(" + arr[currentImg] + ")";  //显示对应的图片
 }
 
+function forget(){
+    alert("请联系管理员重置")
+}
+
 // function changeImg2() {
 
 //     var img = document.getElementById("myDiv");

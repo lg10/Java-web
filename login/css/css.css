@@ -104,6 +104,63 @@ img {
     font-size: 15px;
 }
 
+
+.input {
+    position: relative;
+    top: 15%;
+    left: 80px;
+    width: 100%;
+    height: 100px;
+}
+
+.iconfont {
+    position: absolute;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color: rgba(43, 43, 43, 0.329);
+    z-index: 99;
+}
+
+.logintext input {
+    height: 32px;
+    width: 210px;
+    line-height: 25px;
+    padding-left: 10px;
+    margin-left: 40px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 3px 5px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-left-color: rgba(255, 255, 255, 0);
+
+}
+
+.input div {
+    margin-bottom: 15px;
+}
+
+.logintext input:focus {
+    border-style: solid;
+    border-color: #75a1f0;
+    box-shadow: 0 0 6px #75a1f0;
+}
+
+.action {
+    position: absolute;
+    text-align: right;
+    width: 260px;
+    left: 80px;
+    top: 270px;
+}
+
 @keyframes masked-animation {
     0% {
         background-position: 0 0;
@@ -120,9 +177,7 @@ a:link {
 }
 
 /* //未访问：蓝色、无下划线    */
-a:active {
-    
-}
+a:active {}
 
 /* //激活：红色    */
 a:visited {
@@ -132,8 +187,37 @@ a:visited {
 
 /* //已访问：purple、无下划线    */
 a:hover {
-    
+
     text-decoration: underline;
 }
 
 /* //鼠标移近：红色、下划线  */
+
+.fa {
+    margin: 0%;
+}
+
+.fa:link {
+    color: rgba(88, 88, 88, 0.719);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.action input {
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    background: #6699cc;
+    color: #fff;
+    padding: 5px 30px;
+    padding: 2px 15px\9;
+    padding: 6px 0px;
+    width: 260px;
+    border-radius: 4px;
+    border: 1px solid #217ef2;
+    background-color: #3890ff;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, .06) 0, hsla(0, 0%, 100%, .06)), linear-gradient(0deg, rgba(9, 109, 236, .5) 0, rgba(76, 155, 255, .5));
+    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .08), 0 1px 1px rgba(0, 0, 0, .08);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
+}
