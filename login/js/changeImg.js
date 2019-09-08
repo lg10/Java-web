@@ -29,3 +29,13 @@ function forget(){
 //     img.style.backgroundImage = "url(img/" + img[currentImg] + ")"; //这里特别要注意引号的使用，因为img[curentImg]是个变量，所以用"+变量+"
 
 // }
+
+// var click = document.getElementById(phonelogin);
+// function changeLogin(){
+//     if (click.style.display == "none") {
+//         click.style.display = "block";
+//     } else {
+//         click.style.display = "none";
+//     }
+// }
+
