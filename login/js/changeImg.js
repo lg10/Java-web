@@ -10,15 +10,15 @@ arr[2] = "C:/Users/zahui/Desktop/Java%20web/login/img/718412.jpg";
 changeImg();
 // setInterval(changeImg, timeInterval);
 function changeImg() {
-//     // if (curIndex > arr.length - 2) {
-//     //     curIndex = 0;
-//     // } else {
-//     //     curIndex += 1;
-//     // }
-     document.body.style.backgroundImage = "url(" + arr[currentImg] + ")";  //显示对应的图片
+    //     // if (curIndex > arr.length - 2) {
+    //     //     curIndex = 0;
+    //     // } else {
+    //     //     curIndex += 1;
+    //     // }
+    document.body.style.backgroundImage = "url(" + arr[currentImg] + ")";  //显示对应的图片
 }
 
-function forget(){
+function forget() {
     alert("请联系管理员重置")
 }
 
@@ -30,12 +30,27 @@ function forget(){
 
 // }
 
-// var click = document.getElementById(phonelogin);
-// function changeLogin(){
-//     if (click.style.display == "none") {
-//         click.style.display = "block";
-//     } else {
-//         click.style.display = "none";
-//     }
-// }
+var clickuser = document.getElementById("user");
+var click = document.getElementById("phone");
+var tabuser = document.getElementById("tabuser");
+var tabphone = document.getElementById("tabphone");
+var fontuser = document.getElementById("fontuser");
+var fontphone = document.getElementById("fontphone");
+function changeLogin() {
+    if (click.style.display == "block") {
+        tabuser.style.display = "none";
+        tabphone.style.display = "block";
+        click.style.display = "none";
+        clickuser.style.display = "block";
+        fontuser.style.display = "block";
+        fontphone.style.display = "none";
+    } else {
+        fontuser.style.display = "none";
+        fontphone.style.display = "block";
+        tabphone.style.display = "none";
+        tabuser.style.display = "block";
+        click.style.display = "block";
+        clickuser.style.display = "none";
+    }
+}
 

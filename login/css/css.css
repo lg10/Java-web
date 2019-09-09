@@ -42,14 +42,15 @@ body {
 }
 
 .userlogin,
-#phonelogin {
+.phonelogin {
     width: 100%;
     height: 100%;
 }
 
-.phonelogin{
+.phonelogin {
     display: none;
 }
+
 
 .logo {
     width: 150px;
@@ -137,6 +138,10 @@ img {
     z-index: 99;
 }
 
+.yzpasword {
+    width: 130px;
+}
+
 .logintext input {
     height: 32px;
     width: 210px;
@@ -152,6 +157,8 @@ img {
     border-left-color: rgba(255, 255, 255, 0);
 
 }
+
+
 
 .input div {
     margin-bottom: 15px;
@@ -178,21 +185,38 @@ img {
     width: 0;
     height: 0;
     border-top: 30px solid transparent;
-    border-right: 30px solid rgba(243, 243, 243, 0.822);
-    border-bottom: 30px solid rgba(243, 243, 243, 0.822);
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
     border-left: 30px solid transparent;
+}
+
+#tabuser {
+    display: none;
 }
 
 .iconphone {
     position: absolute;
-    font-size: 60px;
-    top: -13px;
+    font-size: 35px;
+    top: -10px;
+    right: -23px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: rgba(52, 52, 52, 0.69);
+    z-index: 99;
+}
+
+.icondiannao {
+    position: absolute;
+    font-size: 35px;
+    top: -7px;
     right: -20px;
     line-height: 40px;
     text-align: center;
     width: 40px;
     height: 40px;
-    color: rgba(133, 130, 130, 0.705);
+    color: rgba(52, 52, 52, 0.69);
     z-index: 99;
 }
 
@@ -252,4 +276,64 @@ a:hover {
     background-image: linear-gradient(0deg, hsla(0, 0%, 100%, .06) 0, hsla(0, 0%, 100%, .06)), linear-gradient(0deg, rgba(9, 109, 236, .5) 0, rgba(76, 155, 255, .5));
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .08), 0 1px 1px rgba(0, 0, 0, .08);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+.tablogo {
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    top: 328px;
+    right: 44px;
+}
+
+.em {
+    position: absolute;
+    right: -10px;
+    top: 4px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #1c2a3b00;
+    border-right: 5px solid #0072ff00;
+    border-bottom: 5px solid #0072ff00;
+    border-left: 5px solid #368bf8;
+}
+
+#fontphone {
+    display: none;
+}
+
+.tabfont {
+    text-align: center;
+    font-size: 5px;
+    background-color: #ffe1cc;
+    border-color: #3087f6;
+    line-height: 12px;
+    position: relative;
+    z-index: 9999;
+    color: #378df9;
+    background-color: #6379e338;
+    border: 1px solid #368bf8;
+    padding: 2px 5px;
+}
+
+.yzbtu {
+    border: 2px solid #0073ffa9;
+    color: #4b97f4;
+    font-size: 10px;
+    line-height: 25px;
+    width: 70px;
+    size: 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.yzbtu:hover {
+    color: #fff;
+    background-color: #0073ffa9;
+}
+
+.yzbtu:link {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 6px #2d2a2a;
+    box-shadow: 0 0 16px #333;
 }
