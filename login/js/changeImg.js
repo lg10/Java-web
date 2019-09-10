@@ -1,12 +1,20 @@
+function getContextPath() {
+    var contextPath = document.location.pathname;
+    var index = contextPath.substr(1).indexOf("/");
+    contextPath = contextPath.substr(0, index + 1);
+    delete index;
+    return contextPath;
+}
+
 // var curIndex = 0;
 //时间间隔(单位毫秒)，每秒钟显示一张，数组共有3张图片放在img文件夹下
 // var timeInterval = 1000;
 var currentImg = Math.floor(Math.random() * 3);
 //定义一个存放照片位置的数组，可以放任意个，在这里放3个
 var arr = new Array();
-arr[0] = "C:/Users/zahui/Desktop/Java%20web/login/img/hhh.jpg";
-arr[1] = "C:/Users/zahui/Desktop/Java%20web/login/img/sss.jpg";
-arr[2] = "C:/Users/zahui/Desktop/Java%20web/login/img/718412.jpg";
+arr[0] = "./img/hhh.jpg";
+arr[1] = "./img/sss.jpg";
+arr[2] = "./img/718412.jpg";
 changeImg();
 // setInterval(changeImg, timeInterval);
 function changeImg() {
