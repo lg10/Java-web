@@ -158,7 +158,9 @@ img {
 
 }
 
-
+.phonetext{
+    display: none;
+}
 
 .input div {
     margin-bottom: 15px;

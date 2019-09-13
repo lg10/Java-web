@@ -38,6 +38,8 @@ function forget() {
 
 // }
 
+var textuser = document.getElementById("utext");
+var textphone = document.getElementById("ptext");
 var clickuser = document.getElementById("user");
 var click = document.getElementById("phone");
 var tabuser = document.getElementById("tabuser");
@@ -46,6 +48,8 @@ var fontuser = document.getElementById("fontuser");
 var fontphone = document.getElementById("fontphone");
 function changeLogin() {
     if (click.style.display == "block") {
+        textuser.style.display="block";
+        textphone.style.display="none";
         tabuser.style.display = "none";
         tabphone.style.display = "block";
         click.style.display = "none";
@@ -53,6 +57,8 @@ function changeLogin() {
         fontuser.style.display = "block";
         fontphone.style.display = "none";
     } else {
+        textuser.style.display = "none";
+        textphone.style.display = "block";
         fontuser.style.display = "none";
         fontphone.style.display = "block";
         tabphone.style.display = "none";

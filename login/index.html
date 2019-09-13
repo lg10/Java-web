@@ -17,56 +17,59 @@
     <div class="logintop">
        <p class="title titleshadow">商家档案管理系统</p> 
     </div>
-    <form class="logintext">
+    <form class="logintext usertext" id="utext">
         <div id="user" class="userlogin">
             <div class="input">
                 <div>
                     <i class="iconfont icon-wo iconlogin"></i>
-                    <input id="username" name="name" type="text" placeholder="登录账号" required="" autocomplete="on">  
+                    <input id="mid"  name="mid" type="text" placeholder="登录账号" required="" autocomplete="on">  
                 </div>
                 <div>
                     <i class="iconfont icon-suo iconlogin"></i>
-                    <input id="pasword" name="password" type="password" placeholder="密码" required="" autocomplete="on">
+                    <input type="password" id="password" name="password" placeholder="密码" required="" autocomplete="on">
                 </div>
             </div>
             <div class="action">
                 <a class="fa" href="javascript:forget();">忘记密码</a>
                 <br/>
-                <input type="submit" id="submit" value="登录">
+                <input id="submit" type="button" class="login-button" lay-submit value="登录" lay-filter="submitBtn">
             </div>
         </div>
+    </form>
+    <form class="logintext phonetext" id="ptext">
         <div id="phone" class="phonelogin">
             <div class="input">
                 <div>
                     <i class="iconfont icon-shouji iconlogin"></i>
-                    <input id="username" name="name" type="text" placeholder="手机号" required="" autocomplete="on">
+                    <input id="userphone" name="phone" type="text" placeholder="手机号" required="" autocomplete="on">
                 </div>
                 <div>
                     <i class="iconfont icon-yanzhengma iconlogin"></i>
-                    <input class="yzpasword" style="width: 130px;" name="yzpassword" type="password" placeholder="验证码" required="" autocomplete="on">
+                    <input class="yzpasword" style="width: 130px;" name="yzpassword" type="password" placeholder="验证码"
+                        required="" autocomplete="on">
                     <button class="yzbtu" type="button">点击获取</button>
                 </div>
             </div>
             <div class="action">
                 <a class="fa" href="javascript:forget();">忘记密码</a>
                 <br />
-                <input type="submit" id="submit" value="登录">
+                <input id="submit" type="button" class="login-button" lay-submit value="登录" lay-filter="submitBtn">
             </div>
-        </div>
-        <div class="tab">
-            <a href="javascript:changeLogin();">
-                <i  id="tabuser" class="iconfont icon-diannao icondiannao" ></i></a>
-            <a href="javascript:changeLogin();">
-                <i id="tabphone" class="iconfont icon-shouji1 iconphone"></i></a>
-        </div>
-        <div class="tablogo">
-            <div class="tabfont">
-                <p id="fontuser" class="font">验证码登录</p>
-                <p id="fontphone" class="font">密码登录</p>
-            </div>
-            <div class="em"></div>
         </div>
     </form>
+    <div class="tab">
+        <a href="javascript:changeLogin();">
+            <i id="tabuser" class="iconfont icon-diannao icondiannao"></i></a>
+        <a href="javascript:changeLogin();">
+            <i id="tabphone" class="iconfont icon-shouji1 iconphone"></i></a>
+    </div>
+    <div class="tablogo">
+        <div class="tabfont">
+            <p id="fontuser" class="font">验证码登录</p>
+            <p id="fontphone" class="font">密码登录</p>
+        </div>
+        <div class="em"></div>
+    </div>
 </div>
 
 <div class="bottom">
